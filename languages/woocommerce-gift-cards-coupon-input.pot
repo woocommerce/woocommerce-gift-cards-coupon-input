@@ -1,0 +1,53 @@
+# Copyright (C) 2020 SomewhereWarm
+# This file is distributed under the GNU General Public License v3.0.
+msgid ""
+msgstr ""
+"Project-Id-Version: Gift Cards - Coupon input for WooCommerce 1.0.0\n"
+"Report-Msgid-Bugs-To: https://woocommerce.com/my-account/create-a-ticket/\n"
+"POT-Creation-Date: 2020-05-26 15:23:40+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2020-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"X-Generator: grunt-wp-i18n 1.0.3\n"
+
+#: woocommerce-gift-cards-coupon-input.php:108
+msgid ""
+"<strong>Gift Cards &ndash; Coupon Input</strong> requires <a href=\"%1$s\" "
+"target=\"_blank\">WooCommerce Gift Cards</a> version <strong>%2$s</strong> "
+"or higher."
+msgstr ""
+
+#: woocommerce-gift-cards-coupon-input.php:156
+msgid "Gift Card code applied successfully!"
+msgstr ""
+
+#: woocommerce-gift-cards-coupon-input.php:163
+msgid "Gift Card not found."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Gift Cards - Coupon input for WooCommerce"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid ""
+"https://docs.woocommerce.com/document/composite-products/composite-products-"
+"extensions/#cp-ci"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Mini-extension for WooCommerce Gift Cards that allows you to use the "
+"default coupon form to apply and redeem gift cards."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "SomewhereWarm"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://somewherewarm.com/"
+msgstr ""

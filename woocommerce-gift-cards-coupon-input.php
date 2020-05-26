@@ -134,9 +134,7 @@ class WC_GC_Coupon_Input {
 
 			if ( $match && ! empty( $matches ) ) {
 
-				dd( $matches );
 				$giftcard_code = array_pop( $matches );
-				dd( $giftcard_code );
 				$results       = WC_GC()->db->giftcards->query( array( 'return' => 'objects', 'code' => $giftcard_code, 'limit' => 1 ) );
 				$giftcard_data = count( $results ) ? array_shift( $results ) : false;
 

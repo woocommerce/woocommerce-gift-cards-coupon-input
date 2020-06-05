@@ -1,4 +1,0 @@
-*** Gift Cards - Coupon Input for WooCommerce ***
-
-2020.05.26 - version 1.0.0
-* Initial release.

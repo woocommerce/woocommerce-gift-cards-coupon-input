@@ -1,8 +1,8 @@
 {
 	"name": "woocommerce-gift-cards-coupon-input",
-	"title": "Gift Cards - Coupon Input for WooCommerce",
+	"title": "Gift Cards - Coupon Input",
 	"version": "1.0.0",
-	"homepage": "http://woocommerce.com/products/gift-cards/",
+	"homepage": "https://woocommerce.com/products/gift-cards/",
 	"license": "GPL-3.0+",
 	"repository": {
 		"type": "git",

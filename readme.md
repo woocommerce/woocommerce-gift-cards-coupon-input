@@ -1,4 +1,4 @@
-# Gift Cards - Coupon Input for WooCommerce
+# Gift Cards - Coupon Input
 
 ### What's This?
 

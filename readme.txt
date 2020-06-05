@@ -1,6 +1,6 @@
-=== Gift Cards - Coupon Input for WooCommerce ===
+=== Gift Cards - Coupon Input ===
 
-Contributors: franticpsyx, xristos3490, SomewhereWarm
+Contributors: SomewhereWarm, franticpsyx, xristos3490
 Tags: woocommerce, gift, cards, coupon, input
 Requires at least: 4.4
 Tested up to: 5.4
@@ -12,3 +12,27 @@ License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 Free mini-extension for WooCommerce Gift Cards that allows you to use the default coupon form to apply and redeem gift cards.
+
+
+== Description ==
+
+Free add-on for the official [WooCommerce Gift Cards](https://woocommerce.com/products/gift-cards/) extension that allows you to use the default coupon form to apply and redeem gift cards.
+
+After activating the plugin, the "Have a Gift Card?" form will be hidden, and customers will be able to apply gift card codes using the coupon input field.
+
+
+== Installation ==
+
+This plugin requires the official [WooCommerce Gift Cards](https://woocommerce.com/products/gift-cards/) extension. Before installing this plugin, please ensure that you are running the latest versions of both **WooCommerce** and **WooCommerce Gift Cards**.
+
+
+== Changelog ==
+
+= 1.0.0 =
+* Initial Release.
+
+
+== Upgrade Notice ==
+
+= 1.0.0 =
+Initial release.

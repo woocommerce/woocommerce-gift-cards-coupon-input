@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v3.0.
 msgid ""
 msgstr ""
-"Project-Id-Version: Gift Cards - Coupon input for WooCommerce 1.0.0\n"
+"Project-Id-Version: Gift Cards - Coupon Input 1.0.0\n"
 "Report-Msgid-Bugs-To: https://woocommerce.com/my-account/create-a-ticket/\n"
-"POT-Creation-Date: 2020-05-26 15:39:17+00:00\n"
+"POT-Creation-Date: 2020-06-05 11:10:11+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -13,29 +13,27 @@ msgstr ""
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "X-Generator: grunt-wp-i18n 1.0.3\n"
 
-#: woocommerce-gift-cards-coupon-input.php:108
+#: gift-cards-coupon-input.php:108
 msgid ""
 "<strong>Gift Cards &ndash; Coupon Input</strong> requires <a href=\"%1$s\" "
 "target=\"_blank\">WooCommerce Gift Cards</a> version <strong>%2$s</strong> "
 "or higher."
 msgstr ""
 
-#: woocommerce-gift-cards-coupon-input.php:156
+#: gift-cards-coupon-input.php:154
 msgid "Gift Card code applied successfully!"
 msgstr ""
 
-#: woocommerce-gift-cards-coupon-input.php:163
+#: gift-cards-coupon-input.php:161
 msgid "Gift Card not found."
 msgstr ""
 
 #. Plugin Name of the plugin/theme
-msgid "Gift Cards - Coupon input for WooCommerce"
+msgid "Gift Cards - Coupon Input"
 msgstr ""
 
 #. Plugin URI of the plugin/theme
-msgid ""
-"https://docs.woocommerce.com/document/composite-products/composite-products-"
-"extensions/#cp-ci"
+msgid "https://woocommerce.com/products/gift-cards"
 msgstr ""
 
 #. Description of the plugin/theme

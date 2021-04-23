@@ -11,10 +11,10 @@
 * Domain Path: /languages/
 *
 * Requires at least: 4.4
-* Tested up to: 5.4
+* Tested up to: 5.7
 *
 * WC requires at least: 3.3
-* WC tested up to: 4.2
+* WC tested up to: 5.2
 *
 * Copyright: © 2017-2020 SomewhereWarm SMPC.
 * License: GNU General Public License v3.0

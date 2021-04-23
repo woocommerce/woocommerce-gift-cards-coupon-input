@@ -30,7 +30,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Main plugin class.
  *
  * @class    WC_GC_Coupon_Input
- * @version  1.0.0
+ * @version  1.0.1
  */
 class WC_GC_Coupon_Input {
 
@@ -39,7 +39,7 @@ class WC_GC_Coupon_Input {
 	 *
 	 * @var string
 	 */
-	public static $version = '1.0.0';
+	public static $version = '1.0.1';
 
 	/**
 	 * Min required GC version.
@@ -94,8 +94,13 @@ class WC_GC_Coupon_Input {
 		add_action( 'init', array( __CLASS__, 'localize_plugin' ) );
 
 		// Remove GC native form.
-		remove_action( 'woocommerce_proceed_to_checkout', array( WC_GC()->cart, 'display_form' ), 9 );
-		remove_action( 'woocommerce_review_order_before_submit', array( WC_GC()->cart, 'display_form' ), 9 );
+		if ( version_compare( WC_GC()->get_plugin_version( true ), '1.7.0' ) < 0 ) {
+			remove_action( 'woocommerce_proceed_to_checkout', array( WC_GC()->cart, 'display_form' ), 9 );
+			remove_action( 'woocommerce_review_order_before_submit', array( WC_GC()->cart, 'display_form' ), 9 );
+		} else {
+			remove_action( 'woocommerce_proceed_to_checkout', array( WC_GC()->cart, 'display_form' ), 9 );
+			remove_action( 'woocommerce_review_order_before_payment', array( WC_GC()->cart, 'display_form' ), 9 );
+		}
 
 		// Extend the coupon input.
 		add_action( 'wc_ajax_apply_coupon',  array( __CLASS__, 'maybe_apply_gift_card' ), 9 );

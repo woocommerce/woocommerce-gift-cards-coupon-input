@@ -3,7 +3,7 @@
 * Plugin Name: Gift Cards - Coupon Input
 * Plugin URI: https://woocommerce.com/products/gift-cards
 * Description: Mini-extension for WooCommerce Gift Cards that allows you to use the default coupon form to apply and redeem gift cards.
-* Version: 1.0.0
+* Version: 1.0.2
 * Author: SomewhereWarm
 * Author URI: https://somewherewarm.com/
 *
@@ -11,12 +11,12 @@
 * Domain Path: /languages/
 *
 * Requires at least: 4.4
-* Tested up to: 5.7
+* Tested up to: 5.8
 *
 * WC requires at least: 3.3
-* WC tested up to: 5.2
+* WC tested up to: 5.5
 *
-* Copyright: © 2017-2020 SomewhereWarm SMPC.
+* Copyright: © 2017-2021 SomewhereWarm SMPC.
 * License: GNU General Public License v3.0
 * License URI: http://www.gnu.org/licenses/gpl-3.0.html
 */
@@ -30,7 +30,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Main plugin class.
  *
  * @class    WC_GC_Coupon_Input
- * @version  1.0.1
+ * @version  1.0.2
  */
 class WC_GC_Coupon_Input {
 
@@ -39,7 +39,7 @@ class WC_GC_Coupon_Input {
 	 *
 	 * @var string
 	 */
-	public static $version = '1.0.1';
+	public static $version = '1.0.2';
 
 	/**
 	 * Min required GC version.

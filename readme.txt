@@ -20,6 +20,9 @@ Free add-on for the official [WooCommerce Gift Cards](https://woocommerce.com/pr
 
 After activating the plugin, the "Have a Gift Card?" form will be hidden, and customers will be able to apply gift card codes using the coupon input field.
 
+**Note**: This plugin has been created to validate and refine a feature that may be rolled into WooCommerce Gift Cards — or dropped! — in the future.
+
+**Important**: The code in this plugin is provided “as is”. Support via the WordPress.org forum is provided on a **voluntary** basis only. If you have an active subscription for WooCommerce Gift Cards, please be aware that WooCommerce Support may not be able to assist you with this experimental plugin.
 
 == Installation ==
 

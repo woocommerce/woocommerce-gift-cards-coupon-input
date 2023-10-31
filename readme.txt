@@ -3,11 +3,11 @@
 Contributors: SomewhereWarm, franticpsyx, xristos3490
 Tags: woocommerce, gift, cards, coupon, input
 Requires at least: 4.4
-Tested up to: 5.8
-Stable tag: 1.0.2
+Tested up to: 6.3
+Stable tag: 1.0.3
 Requires PHP: 5.6
 WC requires at least: 3.3
-WC tested up to: 5.5
+WC tested up to: 8.2
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -22,6 +22,8 @@ After activating the plugin, the "Have a Gift Card?" form will be hidden, and cu
 
 **Note**: This plugin has been created to validate and refine a feature that may be rolled into WooCommerce Gift Cards — or dropped! — in the future.
 
+**Important**: This plugin is not compatible with the Cart and Checkout Blocks.
+
 **Important**: The code in this plugin is provided “as is”. Support via the WordPress.org forum is provided on a **voluntary** basis only. If you have an active subscription for WooCommerce Gift Cards, please be aware that WooCommerce Support may not be able to assist you with this experimental plugin.
 
 == Installation ==
@@ -30,6 +32,10 @@ This plugin requires the official [WooCommerce Gift Cards](https://woocommerce.c
 
 
 == Changelog ==
+
+= 1.0.3 =
+* Tweak - Declared support for WordPress 6.3 and WooCommerce 8.2.
+* Tweak - Declared incompatibility with the cart/checkout Blocks.
 
 = 1.0.2 =
 * Tweak - Declared support for WordPress 5.8 and WooCommerce 5.5.

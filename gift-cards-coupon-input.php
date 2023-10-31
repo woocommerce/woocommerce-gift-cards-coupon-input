@@ -3,7 +3,7 @@
 * Plugin Name: Gift Cards - Coupon Input
 * Plugin URI: https://woocommerce.com/products/gift-cards
 * Description: Mini-extension for WooCommerce Gift Cards that allows you to use the default coupon form to apply and redeem gift cards.
-* Version: 1.0.2
+* Version: 1.0.3
 * Author: SomewhereWarm
 * Author URI: https://somewherewarm.com/
 *
@@ -11,12 +11,12 @@
 * Domain Path: /languages/
 *
 * Requires at least: 4.4
-* Tested up to: 5.8
+* Tested up to: 6.3
 *
 * WC requires at least: 3.3
-* WC tested up to: 5.5
+* WC tested up to: 8.2
 *
-* Copyright: © 2017-2021 SomewhereWarm SMPC.
+* Copyright: © 2017-2023 SomewhereWarm SMPC.
 * License: GNU General Public License v3.0
 * License URI: http://www.gnu.org/licenses/gpl-3.0.html
 */
@@ -30,7 +30,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Main plugin class.
  *
  * @class    WC_GC_Coupon_Input
- * @version  1.0.2
+ * @version  1.0.3
  */
 class WC_GC_Coupon_Input {
 
@@ -39,7 +39,7 @@ class WC_GC_Coupon_Input {
 	 *
 	 * @var string
 	 */
-	public static $version = '1.0.2';
+	public static $version = '1.0.3';
 
 	/**
 	 * Min required GC version.
@@ -93,6 +93,9 @@ class WC_GC_Coupon_Input {
 		// Localization.
 		add_action( 'init', array( __CLASS__, 'localize_plugin' ) );
 
+		// Declare Blocks incompatibility.
+		add_action( 'before_woocommerce_init', array( __CLASS__, 'declare_blocks_compatibility' ) );
+
 		// Remove GC native form.
 		if ( version_compare( WC_GC()->get_plugin_version( true ), '1.7.0' ) < 0 ) {
 			remove_action( 'woocommerce_proceed_to_checkout', array( WC_GC()->cart, 'display_form' ), 9 );
@@ -120,6 +123,20 @@ class WC_GC_Coupon_Input {
 	 */
 	public static function localize_plugin() {
 		load_plugin_textdomain( 'woocommerce-gift-cards-coupon-input', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+	}
+
+	/**
+	 * Declare cart/checkout Blocks incompatibility.
+	 *
+	 * @since 1.0.3
+	 */
+	public static function declare_blocks_compatibility() {
+
+		if ( ! class_exists( 'Automattic\WooCommerce\Utilities\FeaturesUtil' ) ) {
+			return;
+		}
+
+		\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'cart_checkout_blocks', plugin_basename( __FILE__ ), false );
 	}
 
 	/**

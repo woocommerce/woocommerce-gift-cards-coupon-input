@@ -39,7 +39,7 @@ class WC_GC_Coupon_Input {
 	 *
 	 * @var string
 	 */
-	public static $version = '2.0';
+	public static $version = '2.0.0';
 
 	/**
 	 * Min required GC version.

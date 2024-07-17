@@ -3,20 +3,20 @@
 * Plugin Name: Gift Cards - Coupon Input
 * Plugin URI: https://woocommerce.com/products/gift-cards
 * Description: Mini-extension for WooCommerce Gift Cards that allows you to use the default coupon form to apply and redeem gift cards.
-* Version: 1.0.3
+* Version: 1.1.0
 * Author: SomewhereWarm
 * Author URI: https://somewherewarm.com/
 *
 * Text Domain: woocommerce-gift-cards-coupon-input
 * Domain Path: /languages/
 *
-* Requires at least: 4.4
-* Tested up to: 6.3
+* Requires at least: 6.2
+* Tested up to: 6.6
 *
-* WC requires at least: 3.3
-* WC tested up to: 8.2
+* WC requires at least: 8.2
+* WC tested up to: 9.1
 *
-* Copyright: © 2017-2023 SomewhereWarm SMPC.
+* Copyright: © 2017-2024 SomewhereWarm SMPC.
 * License: GNU General Public License v3.0
 * License URI: http://www.gnu.org/licenses/gpl-3.0.html
 */
@@ -30,7 +30,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Main plugin class.
  *
  * @class    WC_GC_Coupon_Input
- * @version  1.0.3
+ * @version  1.1.0
  */
 class WC_GC_Coupon_Input {
 
@@ -39,14 +39,14 @@ class WC_GC_Coupon_Input {
 	 *
 	 * @var string
 	 */
-	public static $version = '1.0.3';
+	public static $version = '1.1.0';
 
 	/**
 	 * Min required GC version.
 	 *
 	 * @var string
 	 */
-	public static $req_gc_version = '1.1.5';
+	public static $req_gc_version = '2.0';
 
 	/**
 	 * GC URL.
@@ -96,6 +96,9 @@ class WC_GC_Coupon_Input {
 		// Declare Blocks incompatibility.
 		add_action( 'before_woocommerce_init', array( __CLASS__, 'declare_blocks_compatibility' ) );
 
+		// Declare HPOS incompatibility.
+		add_action( 'before_woocommerce_init', array( __CLASS__, 'declare_hpos_compatibility' ) );
+
 		// Remove GC native form.
 		if ( version_compare( WC_GC()->get_plugin_version( true ), '1.7.0' ) < 0 ) {
 			remove_action( 'woocommerce_proceed_to_checkout', array( WC_GC()->cart, 'display_form' ), 9 );
@@ -137,6 +140,20 @@ class WC_GC_Coupon_Input {
 		}
 
 		\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'cart_checkout_blocks', plugin_basename( __FILE__ ), false );
+	}
+
+	/**
+	 * Declare HPOS incompatibility.
+	 *
+	 * @since 1.1.0
+	 */
+	public static function declare_hpos_compatibility() {
+
+		if ( ! class_exists( 'Automattic\WooCommerce\Utilities\FeaturesUtil' ) ) {
+			return;
+		}
+
+		\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'custom_order_tables', plugin_basename( __FILE__ ), true );
 	}
 
 	/**

@@ -1,6 +1,6 @@
 === Gift Cards - Coupon Input ===
 
-Contributors: SomewhereWarm
+Contributors: automattic, woocommerce, SomewhereWarm
 Tags: woocommerce, gift, cards, coupon, input
 Requires at least: 6.2
 Tested up to: 6.6

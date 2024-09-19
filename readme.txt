@@ -4,7 +4,7 @@ Contributors: automattic, woocommerce, SomewhereWarm
 Tags: woocommerce, gift, cards, coupon, input
 Requires at least: 6.2
 Tested up to: 6.6
-Stable tag: 2.0.0
+Stable tag: 2.0.1
 Requires PHP: 7.4
 WC requires at least: 8.2
 WC tested up to: 9.1
@@ -32,6 +32,9 @@ This plugin requires the official [WooCommerce Gift Cards](https://woocommerce.c
 
 
 == Changelog ==
+
+= 2.0.1 =
+* Tweak - Updated author links.
 
 = 2.0.0 =
 * Important - New: PHP 7.4+ is now required.
